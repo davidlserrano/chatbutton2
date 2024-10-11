@@ -1,10 +1,10 @@
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
+		background-color: #FD91DB;
+		font-family: "Comic Sans MS", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
+		outline: 1px solid #FD91DB;
 	}
 </style>
 
@@ -33,25 +33,25 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://byteme--tech.sandbox.my.salesforce.com',
-			'https://byteme--tech.sandbox.my.site.com/dssclassic',
+			'https://byteme.my.salesforce.com',
+			'https://byteme.my.site.com/',
 			gslbBaseURL,
-			'00D8K0000017RZR',
-			'wiggy',
+			'00Df2000000BV4b',
+			'Test_Chat',
 			{
-				baseLiveAgentContentURL: 'https://c.la4-c1cs-ia5.salesforceliveagent.com/content',
-				deploymentId: '572f2000000khhy',
-				buttonId: '5738K0000004NVh',
-				baseLiveAgentURL: 'https://d.la4-c1cs-ia5.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'wiggy',
-				isOfflineSupportEnabled: true
+				baseLiveAgentContentURL: 'https://c.la4-c2-ia5.salesforceliveagent.com/content',
+				deploymentId: '5726Q000000PBys',
+				buttonId: '5736Q0000008PJU',
+				baseLiveAgentURL: 'https://d.la4-c2-ia5.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I6Q000000CaZHUA0_1927ce4df49',
+				isOfflineSupportEnabled: false
 			}
 		);
 	};
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://byteme--tech.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://byteme.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
